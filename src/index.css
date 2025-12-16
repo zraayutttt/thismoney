@@ -1,0 +1,15 @@
+:root { --primary: #4f46e5; --bg: #f3f4f6; --card: #ffffff; --danger: #ef4444; --success: #10b981; }
+body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #1f2937; }
+.container { max-width: 600px; margin: 0 auto; }
+.card { background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+.box { padding: 15px; border-radius: 8px; text-align: center; color: white; }
+.income-box { background: var(--success); }
+.expense-box { background: var(--danger); }
+input, select, button { width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+.add-btn { background: var(--primary); color: white; border: none; font-weight: bold; cursor: pointer; }
+.transaction-list { list-style: none; padding: 0; }
+.transaction-item { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee; align-items: center; }
+.transaction-item.income { border-left: 4px solid var(--success); }
+.transaction-item.expense { border-left: 4px solid var(--danger); }
+.delete-btn { background: none; border: none; cursor: pointer; color: #888; width: auto; padding: 0; }
